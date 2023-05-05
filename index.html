@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Teniente Dan</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>/TENIENTE/</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MÍ</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="redes-header">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenid@</p>
+                <h2>Soy <span>Teniente Dan</span>, todólogo</h2>
+                <p class="descripcion">Yo me encargaré de llevar tus ideas al código y del código a la realidad :)</p>
+                <a class="boton-portafolio" href="#portfolio">Ir al Portafolio</a>
+
+                <div class="redes-inicio">
+                    <a class="red" href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="red" href=""><i class="fa-brands fa-github"></i></i></a>
+                    <a class="red" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="red" href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobremi">
+        <div class="card">
+            <img src="./img/yopo.jpg" alt="Playa" class="card-image">
+            <div class="info">
+                <h3 class="card-title">¡Hola!</h3>
+                <p class="description">Es un placer conocerte</p>
+            </div>
+            
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mí</p>
+            <h2>Hola, soy <span>Teniente Dan</span></h2>
+            <h3>Sé hacer de todo</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat inventore repudiandae ipsam doloremque tenetur expedita non, culpa ex quasi dolor debitis earum facere, asperiores repellat! Praesentium commodi laboriosam dolorem excepturi.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla id, numquam ipsam blanditiis laboriosam autem vero perspiciatis alias voluptate aliquam dolorum sint maiores porro, eligendi veniam iste rem ipsa explicabo.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit libero ea aspernatur, voluptatum odit possimus et accusantium! Et similique aut totam a aliquam. Possimus, quia dicta voluptate fuga ipsam accusamus.</p>
+            <a href="" target="_blank">Descargar CV</a>
+
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Diseño de sitios web</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+                <p>Elaboración de páginas web estáticas con la personalidad que caracteriza a tu negocio.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-compass-drafting"></i></span>
+                <h4>Arquitectura de servidores</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Python</li>
+                    <li>Java</li>
+                </ul>
+                <p>Planeación y montaje de procedimientos alojados en servidores.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-sharp fa-solid fa-globe"></i></span>
+                <h4>Ciencia de datos</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>SAS DI</li>
+                    <li>SAS DB</li>
+                </ul>
+                <p>Migración de información de un data center a otro</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-atom"></i></span>
+                <h4>Electrónica</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Arduino</li>
+                    <li>Raspberry Pi</li>
+                </ul>
+                <p>Creación de soluciones usando microcontroladores y SBC</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-brands fa-android"></i></i></span>
+                <h4>Desarrollo Android</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>Java</li>
+                    <li>Kotlin</li>
+                </ul>
+                <p>¿Quieres una aplicación móvil para el SO más usado en smartphones? Yo me encargo.</p>
+            </div>
+
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-desktop"></i></i></span>
+                <h4>Aplicación de escritorio</h4>
+                <hr>
+                <ul class="servicios-tag">
+                    <li>.NET</li>
+                    <li>C++</li>
+                </ul>
+                <p>Creación de sistemas que puedes instalar directamente en tu computadora.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="contenedor-skills" id="skills">
+        <h3 class="titulo-seccion">TECNOLOGÍAS</h3>
+        <div class="fila">
+            <div class="tecnologia">
+                <span class="icono"><i class="fa-brands fa-html5"></i></span>
+                <p>HTML5</p>
+            </div>
+            <div class="tecnologia">
+                <span class="icono"><i class="fa-brands fa-css3-alt"></i></span>
+                <p>CSS3</p>
+            </div>
+            <div class="tecnologia">
+                <span class="icono"><i class="fa-brands fa-square-js"></i></span>
+                <p>JavaScript</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="tecnologia">
+                <span class="icono">C#</i></span>
+                <p>C-Sharp</p>
+            </div>
+            <div class="tecnologia">
+                <span class="icono"><i class="fa-brands fa-python"></i></span>
+                <p>Python</p>
+            </div>
+            <div class="tecnologia">
+                <span class="icono"><i class="fa-brands fa-java"></i></span>
+                <p>Java</p>
+            </div>
+        </div>   
+    </div>
+
+    <section id="portfolio">
+        <h3 class="titulo-seccion">MIS PROYECTOS</h3>
+        <p class="texto-portafolio">Échale un ojo a lo que he estado trabajando.</p>
+        <div class="fila">
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+
+        <div class="fila">
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/PRÓXIMAMENTE.png" alt="">
+                <div class="info">
+                    <div class="info-proyecto">
+                        <h4>Próximamente</h4>
+                        <p>. . .</p>
+                    </div>
+                </div>
+            </div>
+
+
+            
+        </div>        
+    </section>
+
+    <section id="contacto">
+        
+        <div class="custom-shape-divider-top-1666655535">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <h3 class="titulo-seccion">Contáctame ahora</h3>
+        <div class="contenedor-form">
+            <form action="" method="">
+                <div class="fila mitad">
+                    <input type="text" placeholder="Nombre Completo" class="input-mitad" required name="name">
+                    <input type="text" placeholder="Email" class="input-mitad" required name="email">
+                </div>
+                <div class="fila">
+                    <input type="text" placeholder="Tema..." class="input-full" required name="_subject">
+                </div>
+                <div class="fila">
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Tu mensaje..." class="input-full" required></textarea>
+                </div>
+
+                <input type="" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="redes-footer">
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
